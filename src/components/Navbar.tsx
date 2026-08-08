@@ -22,17 +22,25 @@ export const Navbar: React.FC<NavbarProps> = ({
         <div className="flex items-center justify-between h-16">
           {/* Logo & Brand */}
           <div className="flex items-center space-x-3 cursor-pointer" onClick={() => setActiveTab('search')}>
-            <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-emerald-500 to-teal-600 flex items-center justify-center shadow-lg shadow-emerald-500/20">
-              <GraduationCap className="w-6 h-6 text-white" />
+            <div className="bg-white px-2.5 py-1 rounded-xl shadow-sm flex items-center justify-center">
+              <img 
+                src="https://res.cloudinary.com/xc8agmxb/image/upload/v1786160023/Recurso_5IC-EC-negro_m3y1so.png" 
+                alt="Instituto Continental | Escuela Continental" 
+                className="h-8 object-contain"
+               />
+               
             </div>
             <div>
-              <h1 className="text-lg font-bold tracking-tight text-white flex items-center gap-2">
+            <p className="text-sm font-bold tracking-tight text-white flex items-center gap-2">OFICINA DE GESTIÓN DOCENTE</p>
+            </div>
+            <div>
+              <h1 className="text-xs font-bold tracking-tight text-white flex items-center gap-2">
                 Capacitación Docente
                 <span className="text-xs font-semibold px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-400 border border-emerald-500/30">
                   2026
                 </span>
               </h1>
-              <p className="text-xs text-slate-400">Universidad Continental • Seguimiento de Avance</p>
+              <p className="text-xs text-slate-400">• Seguimiento de Avance</p>
             </div>
           </div>
 

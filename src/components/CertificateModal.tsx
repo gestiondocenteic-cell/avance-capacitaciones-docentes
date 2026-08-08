@@ -51,18 +51,30 @@ export const CertificateModal: React.FC<CertificateModalProps> = ({ docente, onC
           {/* Certificate Frame */}
           <div className="border-8 border-double border-slate-300 p-8 bg-white shadow-inner rounded-xl relative">
             {/* Watermark Logo */}
-            <div className="absolute inset-0 flex items-center justify-center opacity-[0.03] pointer-events-none">
-              <GraduationCap className="w-96 h-96 text-slate-900" />
+            <div className="absolute inset-0 flex items-center justify-center opacity-[0.04] pointer-events-none p-12">
+              <img 
+                src="https://res.cloudinary.com/xc8agmxb/image/upload/v1786160023/Recurso_5IC-EC-negro_m3y1so.png" 
+                alt="Watermark Logo" 
+                className="max-w-md max-h-96 object-contain" 
+              />
             </div>
 
             {/* Top Header */}
-            <div className="text-center space-y-3 mb-8">
-              <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-emerald-50 text-emerald-700 border-2 border-emerald-200 mx-auto">
-                <GraduationCap className="w-8 h-8" />
+            <div className="text-center space-y-3 mb-8 relative z-10">
+              <div className="flex justify-center mb-3">
+                <img 
+                  src="https://res.cloudinary.com/xc8agmxb/image/upload/v1786160023/Recurso_5IC-EC-negro_m3y1so.png" 
+                  alt="Instituto Continental | Escuela Continental" 
+                  className="h-16 sm:h-20 object-contain max-w-xs"
+                />
+              </div>
+
+              <div className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-emerald-50 text-emerald-700 border-2 border-emerald-200 mx-auto">
+                <GraduationCap className="w-7 h-7" />
               </div>
               <div>
                 <h4 className="text-xs uppercase tracking-widest text-slate-500 font-bold">
-                  UNIVERSIDAD CONTINENTAL • DIRECCIÓN ACADÉMICA
+                  INSTITUTO CONTINENTAL | ESCUELA CONTINENTAL • SUB DIRECCIÓN ACADÉMICA
                 </h4>
                 <h1 className="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-1 tracking-tight">
                   CONSTANCIA DE CAPACITACIÓN DOCENTE
@@ -154,15 +166,15 @@ export const CertificateModal: React.FC<CertificateModalProps> = ({ docente, onC
                 <div className="w-32 h-10 border-b-2 border-slate-400 mx-auto flex items-end justify-center pb-1">
                   <span className="font-serif italic text-xs text-slate-400">Firma Digital Validada</span>
                 </div>
-                <p className="text-xs font-bold text-slate-800">Dirección de Desarrollo Docente</p>
-                <p className="text-[10px] text-slate-500">Universidad Continental</p>
+                <p className="text-xs font-bold text-slate-800">Sub Dirección Académica</p>
+                <p className="text-[10px] text-slate-500">Instituto Continental | Escuela Continental</p>
               </div>
               <div className="space-y-1">
                 <div className="w-32 h-10 border-b-2 border-slate-400 mx-auto flex items-end justify-center pb-1">
-                  <span className="font-serif italic text-xs text-slate-400">Sello Institucional</span>
+                  <span className="font-serif italic text-xs text-slate-400">Firma Digital Validada</span>
                 </div>
-                <p className="text-xs font-bold text-slate-800">Coordinación de Capacitación</p>
-                <p className="text-[10px] text-slate-500">Gestión Académica 2026</p>
+                <p className="text-xs font-bold text-slate-800">Oficina de Gestión Docente</p>
+                <p className="text-[10px] text-slate-500">Instituto Continental | Escuela Continental</p>
               </div>
             </div>
           </div>

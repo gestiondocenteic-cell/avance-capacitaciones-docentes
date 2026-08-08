@@ -77,12 +77,16 @@ export default function App() {
       {/* Footer */}
       <footer className="bg-slate-900 text-slate-400 border-t border-slate-800 py-8 text-xs">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <div className="flex items-center space-x-2">
-            <div className="w-6 h-6 rounded bg-emerald-600 text-white flex items-center justify-center font-bold text-xs">
-              UC
+          <div className="flex items-center space-x-3">
+            <div className="bg-white px-2 py-0.5 rounded flex items-center justify-center">
+              <img 
+                src="https://res.cloudinary.com/xc8agmxb/image/upload/v1786160023/Recurso_5IC-EC-negro_m3y1so.png" 
+                alt="Instituto Continental | Escuela Continental" 
+                className="h-5 object-contain"
+              />
             </div>
             <span className="text-slate-300 font-semibold">
-              Universidad Continental • Portal de Capacitaciones Docentes 2026
+              OFICINA DE GESTIÓN DOCENTE • Portal de Capacitaciones Docentes 2026
             </span>
           </div>
 
@@ -92,7 +96,7 @@ export default function App() {
               Validación de Asistencia Oficial
             </span>
             <span className="hidden md:inline">•</span>
-            <span>Soporte Académico: desarrollo.docente@continental.edu.pe</span>
+            <span>Soporte Académico: gestiondocenteic@continental.edu.pe</span>
           </div>
         </div>
       </footer>
